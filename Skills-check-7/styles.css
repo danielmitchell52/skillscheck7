@@ -1,0 +1,1032 @@
+*{
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
+}
+
+/* Nav */
+
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    grid-area: navbar;
+}
+.main-nav {
+    list-style-type: none;
+}
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left: 20px;
+    grid-area: header;
+}
+
+.logo img{
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.active {
+    display: block;
+  }
+.main-nav img{
+    height: 30px;
+    width: 30px;
+}
+
+.bar-search{
+ display: block;
+ -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.bar-search:focus{
+    width: 100%;
+}
+/* Icons */
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+  .icon-bar img{
+      height: 100px;
+      width: 100px;
+  }
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .facebook img{
+      height: 25px;
+      width: 25px;
+  }
+
+  .icon-bar img{
+      height: 30px;
+      width: 30px;
+  }
+
+  .active{
+      display: block;
+  }
+
+  .google img{
+      height: 25px;
+      width: 25px;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .twitter img{
+      width: 25px;
+      height: 25px;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  
+  .icon-bar2 img{
+    height: 30px;
+    width: 30px;
+}
+
+.icon-bar2 {
+  position: fixed;
+  float: right;
+  top: 30%;
+  right: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar2 img{
+    height: 20px;
+    width: 20px;
+}
+
+.cart{
+    background-color: #c9192e;
+}
+
+
+.icon-bar2 a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+  .inputField{
+      width: 150px;
+      height: 80px;
+  }
+
+  input{
+      width: 100px;
+      height: 30px;
+  }
+
+  /* Main */
+
+  /* Content */
+  .content{
+     grid-area: body;
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+     align-items: center;
+     justify-content: center;
+  }
+
+  .card{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .card img{
+     height: 330px;
+     width: 100%;
+     object-fit: cover;
+  }
+ /* Nav */
+  .bottom-nav{
+     grid-area: nav2;
+  }
+
+  .bottom-nav li{
+     list-style-type: none;
+  }
+
+  .bottom-nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+  }
+
+  .nav-links2{
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 20px;
+    display: block;
+    border: 1px solid black;
+    background-color: black;
+    margin: 15px;
+    margin-top: 80px;
+    text-decoration: none;
+
+  }
+
+footer{
+      grid-area: footer;
+  }
+
+  .footer{
+      display: block;
+      margin-top: 30px;
+  }
+
+  .copyright-info{
+      margin: 5px;
+  }
+
+  .copyright a{
+      display: block;
+  }
+
+
+
+  /*Logo for main page */
+  .logo2{
+   display: block;
+   margin: 0 auto;
+  }
+
+  @media(min-width: 320px){
+    .navbar-toggle {
+        position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; 
+      color: rgba(255,255,255,0.8);
+      font-size: 24px;
+     }
+
+     .bottom-nav{
+         display: block;
+         margin-top: 60px;
+     }
+
+     .nav2 a{
+        margin: 10px;
+        margin-top: 30px;
+     }
+     
+     .inputField{
+         position: absolute;
+         top: 16px;
+         right: 40px;
+         width: 20px;
+     }
+
+     .bar-search{
+         position: absolute;
+         right: 40px;
+     }
+     
+     
+     .search-bar{
+      position: absolute;
+      top: 20px;
+      cursor: pointer;
+      font-size: 24px;
+      right: 50px;
+     }
+     
+     .search-barr{
+         display: none;
+     }
+
+     #bar-search{
+         width: 75px;
+         position: absolute;
+         right: 5px;
+     }
+     
+     .main-nav {
+      list-style-type: none;
+      display: none;
+     }
+
+     .active{
+         display: block;
+     }
+
+     .copyright-info{
+        margin: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+       }
+   
+       .copyright a{
+        display: block;
+        margin: 5px;
+       }
+  }
+
+  @media(min-width: 360px){
+    .navbar-toggle {
+        position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; 
+      color: rgba(255,255,255,0.8);
+      font-size: 24px;
+     }
+
+     .bottom-nav{
+         display: block;
+         margin-top: 60px;
+     }
+
+     .nav2 a{
+        margin: 10px;
+        margin-top: 30px;
+     }
+     
+     .inputField{
+         position: absolute;
+         top: 16px;
+         right: 70px;
+         width: 130px;
+     }
+
+     #bar-search{
+         position: absolute;
+         right: 5px;
+         width: 100px;
+     }
+        
+     }
+     
+     
+     .search-bar{
+      position: absolute;
+      top: 20px;
+      cursor: pointer;
+      font-size: 24px;
+      right: 70px;
+     }
+     
+     .search-barr{
+         display: none;
+     }
+     
+     .main-nav {
+      list-style-type: none;
+      display: none;
+     }
+
+     .active{
+         display: block;
+     }
+
+     .copyright-info{
+        margin: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+       }
+   
+       .copyright a{
+        display: block;
+        margin: 5px;
+       }
+
+
+  @media(min-width: 400px){
+    .navbar-toggle {
+        position: absolute;
+        display: block;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; 
+      color: rgba(255,255,255,0.8);
+      font-size: 24px;
+     }
+
+     .bottom-nav{
+         display: block;
+         margin-top: 60px;
+     }
+
+     .nav2 a{
+        margin: 10px;
+        margin-top: 30px;
+     }
+     
+     .inputField{
+         position: absolute;
+         top: 16px;
+         right: 70px;
+     }
+     
+     
+     .search-bar{
+      position: absolute;
+      top: 20px;
+      cursor: pointer;
+      font-size: 24px;
+      right: 80px;
+     }
+     
+     .search-barr{
+         display: none;
+     }
+     
+     .main-nav {
+      list-style-type: none;
+      display: none;
+     }
+
+     .active{
+         display: block;
+     }
+
+     .copyright-info{
+        margin: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+       }
+   
+       .copyright a{
+        display: block;
+        margin: 5px;
+       }
+  }
+
+@media(min-width: 500px){
+    .navbar-toggle {
+        position: absolute;
+     display: block;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; 
+      color: rgba(255,255,255,0.8);
+      font-size: 24px;
+     }
+
+     .bottom-nav{
+         display: block;
+         margin-top: 60px;
+     }
+
+     .nav2 a{
+        margin: 10px;
+        margin-top: 30px;
+     }
+     
+     .inputField{
+         position: absolute;
+         top: 16px;
+         right: 60px;
+     }
+     
+     
+     .search-bar{
+      position: absolute;
+      top: 20px;
+      cursor: pointer;
+      font-size: 24px;
+      right: 70px;
+     }
+     
+     .search-barr{
+         display: none;
+     }
+     
+     .main-nav {
+      list-style-type: none;
+      display: none;
+     }
+     .active{
+         display: block;
+     }
+     
+     .active-searchbar{
+         display: block;
+     }
+     
+     .copyright{
+         display: block;
+     }
+      .logo1{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 400px;
+          margin: 0 auto;
+      }
+    .logo1 img{
+     max-width: 100%;
+    }
+
+    .copyright-info{
+     margin: 15px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+    }
+
+    .copyright a{
+     display: block;
+     margin: 5px;
+    }
+     }
+
+     @media(min-width: 650px){
+        .logo1{
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .bottom-nav{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .nav2{
+            float: left;
+        }
+
+        
+
+        .nav2 a{
+         display: inline-block;
+         margin: 20px;
+        }
+        .nav-links2{
+            float: left;
+        }
+
+        .copyright-info{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+
+        .copyright a{
+         margin: 10px;
+        }
+     }
+
+     @media(min-width: 768px){
+   
+     }
+
+     @media(min-width: 800px){
+ 
+
+         .navbar-toggle {
+            position: absolute;
+         display: block;
+          top: 20px;
+          right: 20px;
+          cursor: pointer; 
+          color: rgba(255,255,255,0.8);
+          font-size: 24px;
+         }
+    
+         .bottom-nav{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-top: 60px;
+         }
+    
+         .nav2 a{
+            margin: 30px;
+            margin-top: 30px;
+         }
+         
+         .inputField{
+             position: absolute;
+             top: 16px;
+             right: 60px;
+         }
+         
+         
+         .search-bar{
+          position: absolute;
+          display: block;
+          top: 20px;
+          cursor: pointer;
+          font-size: 24px;
+          right: 70px;
+         }
+         
+
+         .main-nav {
+          list-style-type: none;
+          display: none;
+         }
+         .active{
+             display: block;
+         }
+
+         .nav-links2{
+         }
+     }
+   /*Content Images break at 900px, media query used to fix the break */
+     @media(min-width: 900px){
+         .content{
+             display: grid;
+             grid-template-columns: repeat(2,1fr);
+         }
+     }
+
+     @media(min-width: 1000px){
+         .content{
+             display: grid;
+             grid-template-columns: repeat(2,1fr);
+         }
+
+         .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0;
+            height: 70px;
+            align-items: center;
+        }
+    
+        li a{
+        
+        }
+
+        .copyright-info{
+            margin-top: 20px;
+        }
+
+        .copyright a{
+         margin: 20px;
+         margin-top: 20px;
+        }
+    
+        .container{
+            margin-top: 0px;
+        }
+        .main-nav {
+            display: flex;
+            margin-right: 30px;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .main-nav li {
+            margin: 0;
+        }
+    
+        .search-bar{
+        position: absolute;
+        left: 400px;
+        }
+        .nav-links {
+            margin-left: 40px;
+        }
+        .logo {
+            margin-top: 0;
+        }
+
+        .navbar-toggle{
+            display: none;
+        }
+
+        .logo1{
+         max-width: 800px;
+        }
+
+        .inputField{
+         position: absolute;
+         top: 20px;
+         left: 230px;
+        }
+
+        .search-bar{
+            position: absolute;
+            top: 25px;
+        }
+
+        .nav2 a{
+         margin: 40px;
+        }
+     }
+
+     @media(min-width: 1200px){
+         .inputField{
+             position: absolute;
+             top: 20px;
+             left: 300px;
+         }
+
+         .search-bar{
+             position: absolute;
+             top: 20px;
+             display: block;
+         }
+     }
+
+     @media(min-width: 1400px){
+      .content{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+      }
+     }
+
+     /*SPLASH CSS START */
+
+    
+ .logo1{
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: -100px;
+    margin-top: -50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .logo12{
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .logo12{
+    width:  100%;
+ }
+
+ .logo1 img{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+ }
+
+ .logo3{
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: -100px;
+    margin-top: -50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .logo3 img{
+    width: 100%;
+    max-width: 800px;
+ }
+ .logo2 {
+    margin:0;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo2 img {
+    display:block;
+    margin:0 auto;
+    width:100%;
+    max-width:1200px;
+}
+
+ @media(min-width: 500px){
+     .logo2 img{
+         width: 100%;
+     }
+
+     .logo1 img{
+        max-width: 100%;
+     }
+
+     .navbar-toggle {
+        position: absolute;
+     display: block;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; 
+      color: rgba(255,255,255,0.8);
+      font-size: 24px;
+     }
+
+     .active{
+         display: block;
+     }
+ }
+ 
+ @media(min-width: 650px){
+     .logo2 img{
+         width: 90%;
+     }
+
+    .logo1 img{
+        max-width: 90%;
+    }
+ }
+
+ @media(min-width: 800px){
+     .logo2 img{
+         width: 80%;
+     }
+
+ }
+
+ @media(min-width: 1000px){
+     .logo2 img{
+         width: 70%;
+     }
+
+     .navbar-toggle{
+         display: none;
+     }
+
+ @media(min-width: 1200px){
+     .logo2 img{
+        width: 60%;
+     }
+
+ @media(min-width: 50%){
+     .logo2 img{
+         width: 50%;
+     }
+ }
+ }
+ }
+ 
+
+
+ /*Contact form */
+/* Form */
+.form{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.form1{
+width: 800px;
+display: block;
+}
+
+.search-bar input{
+height: 30px;
+}
+
+
+
+.toggle{
+display: none;
+}
+
+.navbar input{
+width: 20px;
+}
+
+.active-searchbar{
+display: block;
+}
+
+.inputField{
+position: absolute;
+width: 150px;
+right: 100px;
+}
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.form1 input[type = submit]{
+padding: 12px;
+border-radius: 8px;
+margin-top: 20px;
+color: white;
+background-color: black;
+overflow: hidden;
+}
+
+.form1 textarea{
+border-radius: 4px;
+}
+
+.form1 input[type = subject]{
+border-radius: 4px;
+}
+
+.form1 input[type = checkbox]{
+border: none;
+border-radius: 0px;
+}
+
+label[for = "privacy1"]{
+    color: white;
+}
+
+label[for = "submit"]{
+    color: white;
+}
+
+@media(min-width: 500px){
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+        
+        .form1 input[type = submit]{
+        padding: 12px;
+        border-radius: 8px;
+        margin-top: 20px;
+        color: white;
+        background-color: black;
+        }
+    label[for = "submit"]{
+        display: none;
+    }
+}
+
+@media(min-width: 1000px){
+    label[for = "fname"],
+    label[for = "lname"],
+    label[for = "Email"],
+    label[for = "subject"],
+    label[for = "privacy1"],
+    label[for = "submit"]{
+        float: left;
+        width: 10%;
+        margin-top: 10px;
+    }
+
+    label[for = submit]{
+        display: block;
+    }
+
+
+    
+    .form1 input[name = "firstname"],
+     input[name = "lastname"],
+     input[name = "Email"],
+     input[name = "subject"]{
+        display: block;
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    label[for = "privacy"]{
+   
+    }
+
+    .form1 fieldset{
+     display: block;
+     width: 80%;
+     margin-top: 10px;
+    }
+
+    .privacy{
+     width: 80%;
+    }
+
+    .form1 textarea{
+    display: block;
+    width: 90%;
+    margin-top: 10px;
+    }
+
+    .submit{
+
+    }
+
+    
+}
+
+@media(min-width: 1200px){
+    label[for = "fname"],
+    label[for = "lname"],
+    label[for = "Email"],
+    label[for = "subject"],
+    label[for = "privacy1"],
+    label[for = "submit"]{
+        float: left;
+        width: 10%;
+        margin-top: 10px;
+    }
+
+
+    
+    .form1 input[name = "firstname"],
+     input[name = "lastname"],
+     input[name = "Email"],
+     input[name = "subject"]{
+        display: block;
+        width: 90%;
+        margin-top: 10px;
+    }
+}
